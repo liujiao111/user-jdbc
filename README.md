@@ -1,5 +1,14 @@
 # user-jdbc
-SpringBoot中使用Spring JdbcTemplate实现增删改查操作, 文章地址：https://blog.csdn.net/qq_34464926/article/details/90720099
+文章地址：https://blog.csdn.net/qq_34464926/article/details/90720099
+
+# 文件介绍：
+- pom.xml：maven依赖管理文件
+- application.properties：项目配置文件
+- User：用户实体类
+- UserDao:用户操作dao类
+- UserDaoTest：用户接口单元测试类
+
+
 
 JdbcTemplate是Spring用来简化JDBC操作的核心类，有助于与Spring集成，并且避免了过多冗长的JDBC代码。不过在实际使用中，我们通常使用NamedParameterJdbcTemplate代替JdbcTemplate，因为在传入的参数不确定的时候，使用它会是更好的选择。在本文中，我会介绍如何在SpringBoot中使用NamedParameterJdbcTemplate来完成一整个增删改查的流程。
 - 环境介绍
